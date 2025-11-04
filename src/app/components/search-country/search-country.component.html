@@ -1,0 +1,45 @@
+<div class="home-container container py-5">
+  <div class="text-center mb-5">
+    <h1 class="title">Buscar por país o proyecto</h1>
+    <p class="subtitle">Explora la base de datos de proyectos hidroeléctricos alrededor del mundo</p>
+    <input 
+      type="text" 
+      class="form-control search-input mt-3" 
+      placeholder="Buscar por país, proyecto o ubicación...">
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-dark table-hover align-middle text-center">
+      <thead>
+        <tr>
+          <th scope="col">Nombre del proyecto</th>
+          <th scope="col">Capacidad (MW)</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Ciudad/Región</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <!-- <tbody>
+        <tr *ngFor="let project of projects">
+          <td class="text-start">
+            <strong>{{ project.name }}</strong>
+            <br>
+            <small>{{ project.country }}</small>
+          </td>
+          <td class="text-primary fw-bold">{{ project.capacity | number }}</td>
+          <td>
+            <span class="badge state-badge {{ project.state | lowercase }}">
+              • {{ project.state }}
+            </span>
+          </td>
+          <td>{{ project.city }}</td>
+          <td>
+            <a [routerLink]="['/search']" class="btn btn-outline-light btn-sm">
+              Ver más <i class="bi bi-arrow-right"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody> -->
+    </table>
+  </div>
+</div>

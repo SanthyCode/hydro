@@ -1,0 +1,48 @@
+$bg-dark-blue: #0b1c2c;
+$text-light: #f0f4f8;
+$accent-blue: #00bcd4;
+
+:host {
+  display: block;
+  background-color: $bg-dark-blue;
+  color: $text-light;
+  padding: 3rem 1rem;
+}
+
+.about-container {
+  .section-title {
+    font-size: 2rem;
+    color: $accent-blue;
+  }
+
+  h4 {
+    color: $accent-blue;
+    margin-top: 2rem;
+  }
+
+  .features-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: $accent-blue;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  a {
+    color: lighten($accent-blue, 10%);
+    &:hover {
+      color: lighten($accent-blue, 20%);
+    }
+  }
+}

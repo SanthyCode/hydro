@@ -1,0 +1,60 @@
+.home-container {
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00c6d9;
+  }
+
+  .subtitle {
+    color: #c0c8d1;
+    font-size: 1rem;
+  }
+
+  .search-input {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    background-color: #1c2238;
+    border: 1px solid #2c334f;
+    color: #fff;
+
+    &:focus {
+      border-color: #00c6d9;
+      box-shadow: 0 0 0 0.2rem rgba(0, 198, 217, 0.25);
+      background-color: #1c2238;
+      color: #fff;
+    }
+  }
+
+  table {
+    th, td {
+      vertical-align: middle;
+    }
+
+    .state-badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.8rem;
+
+      &.operational {
+        background-color: rgba(0, 198, 217, 0.2);
+        color: #00c6d9;
+      }
+
+      &.under\ construction {
+        background-color: rgba(194, 160, 40, 0.2);
+        color: #c2a028;
+      }
+
+      &.planned {
+        background-color: rgba(72, 170, 226, 0.2);
+        color: #48aae2;
+      }
+    }
+  }
+
+  .btn-outline-light {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.75rem;
+  }
+}

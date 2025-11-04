@@ -1,0 +1,66 @@
+<div class="container-fluid bg-dark text-light py-4">
+  <div class="row">
+    <!-- Sección del Mapa -->
+    <div class="col-lg-9 col-md-8 mb-4">
+      <div class="border rounded position-relative" style="height: 600px; background-color: #1c1c1c;">
+        <!-- Aquí se integraría el mapa dinámico -->
+        <p class="text-center text-muted pt-5">[Mapa mundial de proyectos hidroeléctricos]</p>
+      </div>
+
+      <!-- Leyenda -->
+      <div class="d-flex justify-content-center mt-3">
+        <div class="me-4">
+          <span class="badge bg-success">&nbsp;</span> Operando
+        </div>
+        <div class="me-4">
+          <span class="badge bg-warning">&nbsp;</span> En construcción
+        </div>
+        <div>
+          <span class="badge" style="background-color: #9b59b6;">&nbsp;</span> Anunciado
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel de Filtros -->
+    <div class="col-lg-3 col-md-4">
+      <div class="card bg-secondary text-light">
+        <div class="card-header">
+          <h5 class="mb-0">Filtros</h5>
+        </div>
+        <div class="card-body">
+          <!-- Estado del proyecto -->
+          <div class="mb-3">
+            <label class="form-label">Estado del proyecto</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="operando">
+              <label class="form-check-label" for="operando">Operando</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="construccion">
+              <label class="form-check-label" for="construccion">En construcción</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="anunciado">
+              <label class="form-check-label" for="anunciado">Anunciado</label>
+            </div>
+          </div>
+
+          <!-- Capacidad mínima -->
+          <div class="mb-3">
+            <label for="capacidad" class="form-label">Capacidad mínima [MW]</label>
+            <input type="range" class="form-range" min="0" max="50000" id="capacidad">
+            <div class="d-flex justify-content-between">
+              <small>0 MW</small>
+              <small>50,000 MW</small>
+            </div>
+          </div>
+
+          <!-- Contador de proyectos -->
+          <div class="mt-4 text-center">
+            <span class="badge bg-info">Mostrando 5 proyectos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
