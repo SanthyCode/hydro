@@ -6,7 +6,7 @@ import { MapComponent } from './components/map/map.component';
 import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent },
+  {path: '**', component: HomeComponent },
   {path: 'search', component: SearchCountryComponent },
   {path: 'map', component: MapComponent },
   {path: 'about', component: AboutComponent },
