@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchCountryComponent } from './components/search-country/search-country.component';
 import { MapComponent } from './components/map/map.component';
 import { AboutComponent } from './components/about/about.component';
+import { GlobeMapComponent } from './components/globe-map/globe-map.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutComponent } from './components/about/about.component';
     HomeComponent,
     SearchCountryComponent,
     MapComponent,
-    AboutComponent
+    AboutComponent,
+    GlobeMapComponent
   ],
   imports: [
     BrowserModule,

@@ -6,11 +6,11 @@ import { MapComponent } from './components/map/map.component';
 import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
-  {path: '**', component: HomeComponent },
-  {path: 'search', component: SearchCountryComponent },
-  {path: 'map', component: MapComponent },
-  {path: 'about', component: AboutComponent },
-
+  { path: '', component: HomeComponent },
+  { path: 'search', component: SearchCountryComponent },
+  { path: 'map', component: MapComponent },
+  { path: 'about', component: AboutComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }, // ✅ Siempre al final
 ];
 
 @NgModule({
